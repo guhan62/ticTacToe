@@ -1,5 +1,5 @@
 # TicTacToe
-Designing ticTacToe with TypeScript
+Designing ticTacToe with TypeScript -- [playground URL](https://guhan62.github.io/ticTacToe/)
 
 ## Module Layout
 * class `Board` [src/Board.ts]
