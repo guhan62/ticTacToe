@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Tic Tac Toe</title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="ribbon" class="row" style="display: block; text-align: center;">
+            <h2>Tic Tac Toe</h2>
+            <p>View GitHub for ticTacToe source </p>
+        </div>
+        <div class="row" style="display: flex; justify-content: center;">
+            <a style="margin-left: 10px;" class="github-button" href="https://github.com/guhan62/ticTacToe" data-size="large" data-show-count="true" aria-label="Star guhan62/ticTacToe on GitHub">Star</a>
+        </div>
+        <div id="game-control" class="row">
+            <div id="reset" class="button">Reset Session</div>
+            <div id="restart" class="button">Restart</div>
+            <!--<div>
+                <label class="label-inline" for="cbox_CPU">CPU</label>
+                <input type="checkbox" id="cbox_CPU">
+            </div>
+            <div>
+                <label class="label-inline" for="cbox_chlg">Challenging?</label>
+                <input type="checkbox" id="cbox_chlg">
+            </div>
+            <div>
+                <label class="label-inline" for="cbox_fmove">First Move?</label>
+                <input type="checkbox" id="cbox_fmove" checked=true>
+            </div>-->
+        </div>
+        <div class="row">
+            <div id="game-room" class="column">
+                <div class="grid-board">
+                    <div id="cell0" class="grid-cell"></div>
+                    <div id="cell1" class="grid-cell"></div>
+                    <div id="cell2" class="grid-cell"></div>
+                    <div id="cell3" class="grid-cell"></div>
+                    <div id="cell4" class="grid-cell"></div>
+                    <div id="cell5" class="grid-cell"></div>
+                    <div id="cell6" class="grid-cell"></div>
+                    <div id="cell7" class="grid-cell"></div>
+                    <div id="cell8" class="grid-cell"></div>
+                </div>
+            </div>
+            <div class="column scoreboard">
+                <table><thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Winner</th>
+                    <th>Time</th>
+                </tr>
+                </thead>
+                <tbody id="scoreboard_body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="./dist/App.js"></script>
+    <script>
+        requirejs(['App']);
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+#ribbon * {
+    margin-bottom: 1rem;
+}
+#game-control {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.button {
+    background-color: black; 
+    border-color: black;
+}
+.grid-board {
+    display: grid;
+    /*grid-template-columns: auto auto auto;*/
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    background-color: black;
+    padding: 10px;
+  }
+
+.grid-cell {
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 50px;
+	font-size: 80px;
+	min-width: 0;
+	min-height: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.scoreboard {
+    overflow-y: auto;
+    max-height: 500px;
+}
+thead th {
+    position: sticky;
+    top: 0;
+}
+td {
+    text-align: center;
+}
+th {
+    text-align: center;
+    background-color: coral;
+    color: black;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }

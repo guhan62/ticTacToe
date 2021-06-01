@@ -1,0 +1,13 @@
+{
+  "compilerOptions" : {
+    "module" : "amd", 
+    "removeComments" : true,
+    "outFile" : "./dist/App.js",
+    "baseUrl" : "./",
+    "alwaysStrict" : true,
+    "declaration" : true,
+  },
+  "include": [
+    "./src/*.ts"
+  ],
+}
