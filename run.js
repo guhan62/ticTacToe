@@ -6,9 +6,9 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'content-type': 'text/css' })
     fs.createReadStream('./static/style.css').pipe(res)
   }
-  else if(req.url=="/dist/App.js") {
+  else if(req.url=="/scripts/App.js") {
     res.writeHead(200)
-    fs.createReadStream('./dist/App.js').pipe(res)
+    fs.createReadStream('./scripts/App.js').pipe(res)
   }
   else {
     res.writeHead(200, { 'content-type': 'text/html' })

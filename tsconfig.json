@@ -2,7 +2,7 @@
   "compilerOptions" : {
     "module" : "amd", 
     "removeComments" : true,
-    "outFile" : "./dist/App.js",
+    "outFile" : "scripts/App.js",
     "baseUrl" : "./",
     "alwaysStrict" : true,
     "declaration" : true,
